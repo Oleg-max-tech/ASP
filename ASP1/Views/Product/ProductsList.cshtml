@@ -1,0 +1,15 @@
+﻿@model ProductApp.Models.Product
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products List</title>
+</head>
+<body>
+    <h1>Інформація про продукт</h1>
+    <p><strong>Назва:</strong> @Model.Name</p>
+    <p><strong>Ціна:</strong> @Model.Price грн</p>
+    <p><strong>Опис:</strong> @ViewBag.Description</p>
+    <p><strong>Дата виготовлення:</strong> @ViewData["ManufactureDate"]</p>
+</body>
+</html>
